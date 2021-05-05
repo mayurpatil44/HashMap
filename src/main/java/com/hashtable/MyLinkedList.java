@@ -47,5 +47,30 @@ public class MyLinkedList<K,V> {
         }
     }
 
+    public void delete(K key) {
+        MyMapNode temp = head;
+        while (temp != null) {
+            if(head.getKey().equals(key))
+            {
+                if(head.getNext()==null)
+                {
+                    head=null;
+                    tail=null;
+                    break;
+                }
+                else
+                {
+                    head=head.getNext();
+                    break;
+                }
+            }
+            if (temp.getNext().getKey().equals(key))
+            {
+                temp.setNext(temp.getNext().getNext());
+            }
+            tail = temp;
+            temp = temp.getNext();
+        }
+    }
 
 }

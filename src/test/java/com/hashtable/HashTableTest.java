@@ -40,6 +40,24 @@ public class HashTableTest {
         int frequency = hashtable.get("paranoid");
         Assert.assertEquals(3,frequency);
     }
+    @Test
+    public void stringPassed_returnsWordFrequency() {
+        String str="Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
+        HashTable<String,Integer> hashtable=new HashTable<>();
+        String[] words=str.toLowerCase().split(" ");
+        for(String s:words)
+        {
+            Integer value = hashtable.get(s);
+            if(value==null)
+                value=1;
+            else
+                value++;
+            hashtable.add(s,value);
+        }
+        hashtable.remove("avoidable");
+        Integer frequency = hashtable.get("avoidable");
+        Assert.assertEquals(null,frequency);
+    }
 
 
 

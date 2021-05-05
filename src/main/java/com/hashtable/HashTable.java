@@ -53,5 +53,9 @@ public class HashTable<K,V> {
 
     }
 
-
+    public void remove(K key) {
+        int index = this.getBucketIndex(key);
+        MyLinkedList linkedList = this.hash_array.get(index);
+        linkedList.delete(key);
+    }
 }
