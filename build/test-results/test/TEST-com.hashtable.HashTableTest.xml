@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hashtable.HashTableTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-05T06:32:56" hostname="DESKTOP-45808RR" time="0.052">
+<testsuite name="com.hashtable.HashTableTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-05T06:43:01" hostname="DESKTOP-45808RR" time="0.008">
   <properties/>
-  <testcase name="stringParsed_ReturnsFrequency" classname="com.hashtable.HashTableTest" time="0.052"/>
+  <testcase name="given_a_String_whenPasses_returnsFreq" classname="com.hashtable.HashTableTest" time="0.008"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

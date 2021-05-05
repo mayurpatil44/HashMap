@@ -12,8 +12,10 @@ public class MyLinkedList<K,V> {
         {
             head = last;
         }
-        else {
-            while (node.getNext() != null) {
+        else
+        {
+            while (node.getNext() != null)
+            {
                 node = node.getNext();
             }
             node.setNext(last);
@@ -37,10 +39,13 @@ public class MyLinkedList<K,V> {
         MyMapNode node = head;
         while (node != null) {
             System.out.print(node);
-            if (node != tail) {
+            if (node != tail)
+            {
                 System.out.print(" -> ");
             }
             node = node.getNext();
         }
     }
+
+
 }
